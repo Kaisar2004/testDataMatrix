@@ -1,0 +1,13 @@
+<form class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Имя</mat-label>
+    <input matInput placeholder="Введите имя" [(ngModel)]="formData.name" name="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Фамилия</mat-label>
+    <input matInput placeholder="Введите фамилию" [(ngModel)]="formData.surname" name="surname">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="addData()">Добавить</button>
+</form>
